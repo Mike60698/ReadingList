@@ -2,25 +2,25 @@ package ReadingList.src;
 
 import java.util.Scanner;
 
-import ReadingList.src.BookList;
-
-import ReadingList.src.Book;
-
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        BookList list = new BookList(10); 
+        BookList foundationalTexts = new BookList(10); 
 
-        list.addBook("Wage-Labour and Capital", "Karl Marx", "WageLabourDesc.txt", true);
-        list.addBook("Value, Price and Profit", "Karl Marx", null, false);
+        foundationalTexts.addBook("Wage-Labour and Capital", "Karl Marx", "Marx/WageLabour.txt", true);
+        foundationalTexts.addBook("Value, Price and Profit", "Karl Marx", "Marx/ValuePrice.txt", false);
+        foundationalTexts.addBook("Socialism: Utopian and Scientific", "Friedrich Engels", null, false);
+        foundationalTexts.addBook("The State and Revolution", "Vladimir Lenin", null, false);
+        foundationalTexts.addBook("Imperialism, the Highest Stage of Capitalism", "Vladimir Lenin", null, false);
 
-        list.printList(); 
+
+        foundationalTexts.printList(); 
 
         System.out.print("Enter book title: ");
         String input = scanner.nextLine();
 
-        Book book = list.getBook(input);  
+        Book book = foundationalTexts.getBook(input);  
         if (book != null) {
             System.out.println("Summary of " + book.getTitle() + ":\n" + book.getSummary());
         } else {

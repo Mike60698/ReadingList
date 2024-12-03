@@ -31,7 +31,7 @@ public class Book {
         }
         try {
             // Correct the path to point to the DescAndSummary folder inside ReadingList
-            Path path = Paths.get("ReadingList/DescAndSummary/Marx", summaryFilePath).toAbsolutePath();
+            Path path = Paths.get("ReadingList/DescAndSummary", summaryFilePath).toAbsolutePath();
             System.out.println("Looking for file at: " + path);  // Debugging line
             return new String(Files.readAllBytes(path));
         } catch (IOException e) {

@@ -1,0 +1,13 @@
+“Wage-Labour and Capital” by Karl Marx is a foundational text in Marxist economic theory. Originally delivered as a series of lectures in 1847 and later published as an essay, it examines the relationship between workers and capitalists under the capitalist mode of production. Marx dissects the dynamics of wage labor, the source of profit, and the exploitative nature of capitalism.
+
+In the text, Marx explains how labor power becomes a commodity, sold by workers to capitalists in exchange for wages. He argues that wages are not equivalent to the value of what workers produce but represent only a fraction of it—just enough to sustain the worker. The surplus value created by workers’ labor is appropriated by capitalists, forming the basis of profit.
+
+Marx also critiques the commodification of human labor and highlights the inherent conflict between labor and capital, which he sees as driving class struggle. He emphasizes that the capitalist system perpetuates inequality and alienation, as workers are estranged from the fruits of their labor and the production process itself.
+
+public void printList(ListNode head) {
+    ListNode current = head; 
+    while (current != null) {
+        System.out.println(current.getPayload()); 
+        current = current.getNext(); 
+    }
+}
